@@ -692,8 +692,8 @@ select:focus {
     }
     #faq {
         /* margin-left: 24rem; */
-        max-width: 1028px;
-        min-height: 608px;
+        max-width: max-content;
+        min-height: max-content;
         margin: 0 auto;
         margin-top: -50rem;
     }
@@ -1602,10 +1602,11 @@ video {
 }
 
 .guideline{
-    margin-right: 1rem;
     font-weight: 500;
-    max-width: 85%;
     font-size: 18px;
+}
+.guide li{
+    list-style-type: disc;
 }
 .acc-container {
     padding: 0rem 2rem 4rem 2rem;
@@ -1641,4 +1642,15 @@ video {
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
     border-bottom: 1px solid #ccc;
+}
+.contact{
+    padding-top: 10%;
+}
+.guide
+{
+    padding: 4rem 2rem 4rem 2rem;
+}
+.faqras
+{
+    padding-top: 5%;
 }
