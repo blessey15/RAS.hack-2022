@@ -27,6 +27,7 @@ https://source.unsplash.com/PRne5FNBRmk
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 17.5px;
+    background-image: url("img/2022/robots.jpg");
 }
 
 .hero-one {
@@ -39,6 +40,8 @@ https://source.unsplash.com/PRne5FNBRmk
     z-index: 1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(https://i.ibb.co/61WkkNt/Whats-App-Image-2021-12-14-at-11-18-33-PM.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("img/2022/robots.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,10 +60,20 @@ https://source.unsplash.com/PRne5FNBRmk
     background-position: center;
 }
 
+.hero-image {
+    background-image: url("img/2022/robots.jpg");
+    background-color: #000;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
 .header-title {
     z-index: 2;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -71,12 +84,12 @@ https://source.unsplash.com/PRne5FNBRmk
     display: block;
     font-weight: 700;
     /* width:20%; */
-    width: 100%;
+    /*width: 100%;*/
     /* max-width: ; */
 }
 
 .header-primary img {
-    width: 100%;
+    width: 15%;
     max-width: 931px;
 }
 
@@ -1583,4 +1596,11 @@ video {
 
 .header-btn {
     margin: 30px auto;
+}
+
+.guideline{
+    margin-right: 1rem;
+    font-weight: 500;
+    max-width: 85%;
+    font-size: 18px;
 }

@@ -529,3 +529,21 @@
         letter-spacing: 8px !important;
     }
 }
+
+.header-subtitle{
+    z-index: 1;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 30px;
+}
+.header-subsubtitle{
+    z-index: 1;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
