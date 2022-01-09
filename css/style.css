@@ -17,7 +17,10 @@ https://source.unsplash.com/PRne5FNBRmk
     padding: 0;
     box-sizing: border-box;
 }
-
+html
+{
+    overflow-x: hidden;
+}
 .hero {
     width: 100vw;
     height: 100vh;
@@ -1603,4 +1606,39 @@ video {
     font-weight: 500;
     max-width: 85%;
     font-size: 18px;
+}
+.acc-container {
+    padding: 0rem 2rem 4rem 2rem;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.acc-btn {
+    width: 100%;
+    padding: 1.6rem 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background: inherit;
+    border: none;
+    outline: none;
+    text-align: left;
+    transition: all 0.5s linear;
+}
+.acc-btn:after {
+    content: "\27A4";
+    color: #613d91;
+    float: right;
+    transition: all 0.3s linear;
+}
+.acc-btn.is-open:after {
+    transform: rotate(90deg);
+}
+.acc-content {
+    max-height: 0;
+    color: white;
+    font-size: 1.4rem;
+    margin: 0 2rem;
+    padding-left: 1rem;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    border-bottom: 1px solid #ccc;
 }
