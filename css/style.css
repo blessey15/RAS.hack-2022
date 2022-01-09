@@ -30,7 +30,7 @@ html
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 17.5px;
-    background-image: url("img/2022/robots.jpg");
+    background-image: url("./img/2022/robots.jpg");
 }
 
 .hero-one {
@@ -93,7 +93,7 @@ html
 
 .header-primary img {
     width: 15%;
-    max-width: 931px;
+    /*max-width: 931px;*/
 }
 
 .header-sub {
@@ -1653,4 +1653,14 @@ video {
 .faqras
 {
     padding-top: 5%;
+}
+
+.rasform{
+    background-color: #1b0d2c;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: hidden;
+    backdrop-filter: blur(42px);
+    border-radius: 15px;
+    padding: 15px;
 }
