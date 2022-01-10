@@ -1,10 +1,11 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     -webkit-font-smoothing: antialiased;
     font-display: fallback !important;
     font-size: 16px;
     background: #061f4a;
     color: white;
+    overflow-x: hidden;
 }
 
 /* 
@@ -24,7 +25,7 @@ https://source.unsplash.com/PRne5FNBRmk
     color: #ccc;
     position: relative;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     letter-spacing: 17.5px;
     background-image: url("./img/2022/robots.jpg");
 }
@@ -39,9 +40,8 @@ https://source.unsplash.com/PRne5FNBRmk
     z-index: 1;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(https://i.ibb.co/61WkkNt/Whats-App-Image-2021-12-14-at-11-18-33-PM.jpg); */
-    background-image:
-        url("/img/2022/robots.jpg");
-        /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) */
+    background-image: url("/img/2022/robots.jpg");
+    /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -68,7 +68,7 @@ https://source.unsplash.com/PRne5FNBRmk
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
+}
 
 .header-title {
     z-index: 2;
@@ -89,7 +89,8 @@ https://source.unsplash.com/PRne5FNBRmk
 }
 
 .header-primary img {
-    width: 15%;
+    /* width: 15%; */
+    width: 250px;
     /*max-width: 931px;*/
 }
 
@@ -345,7 +346,7 @@ div#swal2-content ol li {
     color: white;
 }
 .main-nav li.active a:after {
-    content: '';
+    content: "";
     height: 3px;
     position: absolute;
     bottom: -3px;
@@ -494,7 +495,7 @@ div#swal2-content ol li {
     opacity: 1;
     transform: scale(1);
 }
-#galery-owl.owl-theme .owl-nav [class*='owl-'] {
+#galery-owl.owl-theme .owl-nav [class*="owl-"] {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -569,8 +570,8 @@ select:focus {
     overflow: hidden;
 }
 
-.tabs [class^='tab'] label,
-.tabs [class*=' tab'] label {
+.tabs [class^="tab"] label,
+.tabs [class*=" tab"] label {
     color: #efedef;
     cursor: pointer;
     display: block;
@@ -581,8 +582,8 @@ select:focus {
     text-align: center;
 }
 
-.tabs [class^='tab'] [type='radio'],
-.tabs [class*=' tab'] [type='radio'] {
+.tabs [class^="tab"] [type="radio"],
+.tabs [class*=" tab"] [type="radio"] {
     border-bottom: 1px solid rgba(239, 237, 239, 0.5);
     cursor: pointer;
     -webkit-appearance: none;
@@ -596,25 +597,25 @@ select:focus {
     transition: all 0.3s ease-in-out;
 }
 
-.tabs [class^='tab'] [type='radio']:hover,
-.tabs [class^='tab'] [type='radio']:focus,
-.tabs [class*=' tab'] [type='radio']:hover,
-.tabs [class*=' tab'] [type='radio']:focus {
+.tabs [class^="tab"] [type="radio"]:hover,
+.tabs [class^="tab"] [type="radio"]:focus,
+.tabs [class*=" tab"] [type="radio"]:hover,
+.tabs [class*=" tab"] [type="radio"]:focus {
     border-bottom: 1px solid #f700ff;
 }
 
-.tabs [class^='tab'] [type='radio']:checked,
-.tabs [class*=' tab'] [type='radio']:checked {
+.tabs [class^="tab"] [type="radio"]:checked,
+.tabs [class*=" tab"] [type="radio"]:checked {
     border-bottom: 2px solid #f700ff;
 }
 
-.tabs [class^='tab'] [type='radio']:checked + div,
-.tabs [class*=' tab'] [type='radio']:checked + div {
+.tabs [class^="tab"] [type="radio"]:checked + div,
+.tabs [class*=" tab"] [type="radio"]:checked + div {
     opacity: 1;
 }
 
-.tabs [class^='tab'] [type='radio'] + div,
-.tabs [class*=' tab'] [type='radio'] + div {
+.tabs [class^="tab"] [type="radio"] + div,
+.tabs [class*=" tab"] [type="radio"] + div {
     display: block;
     opacity: 0;
     padding: 2rem 0;
@@ -629,20 +630,20 @@ select:focus {
     width: 50%;
 }
 
-.tabs .tab-2 [type='radio'] + div {
+.tabs .tab-2 [type="radio"] + div {
     width: 200%;
     margin-left: 200%;
 }
 
-.tabs .tab-2 [type='radio']:checked + div {
+.tabs .tab-2 [type="radio"]:checked + div {
     margin-left: 0;
 }
 
-.tabs .tab-2:last-child [type='radio'] + div {
+.tabs .tab-2:last-child [type="radio"] + div {
     margin-left: 100%;
 }
 
-.tabs .tab-2:last-child [type='radio']:checked + div {
+.tabs .tab-2:last-child [type="radio"]:checked + div {
     margin-left: -100%;
 }
 
@@ -776,7 +777,7 @@ select:focus {
     opacity: 1;
     transform: scale(1);
 }
-#profile-owl.owl-theme .owl-nav [class*='owl-'] {
+#profile-owl.owl-theme .owl-nav [class*="owl-"] {
     font-size: 40px;
     position: absolute;
     top: 50%;
@@ -806,7 +807,7 @@ select:focus {
     margin-top: 60px;
 }
 .event:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 60px;
     top: 0px;
@@ -818,7 +819,7 @@ select:focus {
     height: 60px;
 }
 .event + .event:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 60px;
     height: 60px;
@@ -920,7 +921,7 @@ select:focus {
     border-style: solid;
     border-width: 17px 20px 0;
     border-color: #000 transparent transparent;
-    content: '';
+    content: "";
     position: absolute;
     bottom: -18px;
     -webkit-transform: translateY(-50%);
@@ -1036,8 +1037,8 @@ div.home-content {
     color: #ffffff;
     cursor: pointer;
     display: flex;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 18px;
     font-weight: 600;
     padding: 12px 20px;
@@ -1435,8 +1436,8 @@ div.home-content {
         color: #ffffff;
         cursor: pointer;
         display: flex;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
-            'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         font-size: 18px;
         font-weight: 600;
         padding: 12px 20px;
@@ -1444,7 +1445,7 @@ div.home-content {
     }
 }
 @media only screen and (max-width: 480px) {
-    [class*='col-xs'] {
+    [class*="col-xs"] {
         width: 100%;
     }
     #devfolio-apply-now2 {
@@ -1455,8 +1456,8 @@ div.home-content {
         color: #ffffff;
         cursor: pointer;
         display: flex;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
-            'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         font-size: 18px;
         font-weight: 600;
         padding: 12px 20px;
@@ -1466,7 +1467,7 @@ div.home-content {
 
 .blue-button {
     display: inline-block;
-    font-family: Whitney, 'Open Sans', Helvetica, sans-serif;
+    font-family: Whitney, "Open Sans", Helvetica, sans-serif;
     font-weight: 400;
     font-size: 20px;
     border-radius: 3px;
@@ -1526,7 +1527,7 @@ div.home-content {
 
 .play-close::before,
 .play-close::after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 1px;
@@ -1598,11 +1599,11 @@ video {
     margin: 30px auto;
 }
 
-.guideline{
+.guideline {
     font-weight: 500;
     font-size: 18px;
 }
-.guide li{
+.guide li {
     list-style-type: disc;
 }
 .acc-container {
@@ -1640,36 +1641,106 @@ video {
     transition: max-height 0.3s ease-in-out;
     border-bottom: 1px solid #ccc;
 }
-.contact{
+.contact {
     padding-top: 10%;
 }
-.guide
-{
+.guide {
     padding: 4rem 2rem 4rem 2rem;
 }
-.faqras
-{
+.faqras {
     padding-top: 5%;
 }
 
-.rasform{
+.rasform {
     /*background-color: #1b0d2c;*/
-    
+
     overflow: hidden;
     backdrop-filter: blur(42px);
     /* border-radius: 15px;
     padding: 15px; */
 }
-.gform{
+.gform {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
     background: none;
 }
-.robot-img
-{
+.robot-img {
     background-position: center;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
+}
+
+/* hero styles */
+
+.hero#home {
+    background-image: url("../img/hero-img.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 0px 0px; */
+    position: relative;
+}
+
+.hero#home::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.6;
+    /* z-index: 1; */
+}
+
+.hero span {
+    display: inline-block;
+}
+
+.hero .reg-text {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 3.3333333333s ease-out, opacity 5s ease;
+}
+.hero .reg-text.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.header-subsubtitle {
+    left: 0 !important;
+}
+
+.hero .letter {
+    transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease, opacity 5s ease;
+    opacity: 0;
+    filter: blur(5px);
+}
+.hero .letter:nth-of-type(2) {
+    transform: translateY(-160px);
+    transition-duration: 2.5s;
+}
+.hero .letter:nth-of-type(3) {
+    filter: blur(0);
+    transform: translateY(-170px);
+    transition-duration: 3.8461538462s;
+}
+.hero .letter:nth-of-type(4) {
+    transform: translateY(-200px);
+    transition-duration: 3.3333333333s;
+}
+.hero .letter:nth-of-type(5) {
+    transform: translateY(-150px);
+    transition-duration: 2.5s;
+}
+.hero .letter:nth-of-type(6) {
+    filter: blur(0);
+    transform: translateY(-180px);
+    transition-duration: 2.1739130435s;
+}
+.hero .letter.loaded {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
 }
