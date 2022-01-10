@@ -17,10 +17,6 @@ https://source.unsplash.com/PRne5FNBRmk
     padding: 0;
     box-sizing: border-box;
 }
-html
-{
-    overflow-x: hidden;
-}
 .hero {
     width: 100vw;
     height: 100vh;
@@ -41,10 +37,11 @@ html
     height: 100vh;
     clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh);
     z-index: 1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(https://i.ibb.co/61WkkNt/Whats-App-Image-2021-12-14-at-11-18-33-PM.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("img/2022/robots.jpg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(https://i.ibb.co/61WkkNt/Whats-App-Image-2021-12-14-at-11-18-33-PM.jpg); */
+    background-image:
+        url("/img/2022/robots.jpg");
+        /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1657,18 +1654,22 @@ video {
 
 .rasform{
     /*background-color: #1b0d2c;*/
-    margin-left: 50px;
-    margin-right: 50px;
+    
     overflow: hidden;
     backdrop-filter: blur(42px);
-    border-radius: 15px;
-    padding: 15px;
+    /* border-radius: 15px;
+    padding: 15px; */
 }
 .gform{
+    display: flex;
+    justify-content: center;
     margin-top: 1rem;
     background: none;
-    display: flex;
-    flex-direction: column;
-    margin-left: 90px;
-    padding: 20px;
+}
+.robot-img
+{
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
 }
